@@ -1,9 +1,16 @@
-.phony = test1
+.phony = sentCode
 
 test_var="hell"
 
-test1:
-	@echo "Hello"
-	@echo ${test_var}"
-test2: 
-	@echo "Test 2"
+sentCode:
+	git init
+	git remote add origin https://github.com/Willsi/QAC.git
+gitAdd:
+	git add .
+	
+
+gitCommit: gitAdd
+	git commit -m "Second commit"
+	git status
+gitPush: gitCommit
+	git push -u orgin master
