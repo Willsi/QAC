@@ -13,4 +13,4 @@ gitCommit: gitAdd
 	git commit -m "Second commit"
 	git status
 gitPush: gitCommit
-	git push -u orgin master
+	git push -u origin master
